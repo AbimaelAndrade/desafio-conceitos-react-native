@@ -41,7 +41,7 @@ export default function App() {
         <Text style={styles.repository}>{repository.title}</Text>
         <View style={styles.techsContainer}>
           {repository.techs.map(tech =>(
-            <Text style={styles.tech}>
+            <Text key={`techs-${tech}`} style={styles.tech}>
               {tech}
             </Text>
           ))}
